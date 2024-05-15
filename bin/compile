@@ -1,0 +1,9 @@
+#!/bin/bash
+# This script will be run by Heroku during the build phase
+
+# Change to the app directory
+cd "$1"
+
+# Execute the custom install script
+./buildpack/install.sh
+
